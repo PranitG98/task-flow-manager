@@ -1,0 +1,12 @@
+<div class="board">
+  <div class="column" *ngFor="let key of ['todo', 'inProgress', 'done']">
+    <h3>{{ key | titlecase }}</h3>
+    <div cdkDropList [cdkDropListData]="tasks[key]" (cdkDropListDropped)="drop($event)">
+      <div class="task" *ngFor="let task of tasks[key]" cdkDrag>
+        {{ task }}
+      </div>
+    </div>
+    <input [(ngModel)]="newTask" placeholder="New Task" *ngIf="key === 'todo'">
+    <button (click)="addTask()" *ngIf="key === 'todo'">Add</button>
+  </div>
+</div>
