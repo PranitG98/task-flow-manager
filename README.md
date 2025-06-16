@@ -14,6 +14,18 @@ A simple task manager app built in Angular with drag-and-drop functionality to m
 - TypeScript
 - CSS Grid/Flex
 
+# Step 1: Clone the repository
+git clone https://github.com/PranitG98/task-flow-manager.git
+
+# Step 2: Navigate into the project directory
+cd task-flow-manager
+
+# Step 3: Install all dependencies
+npm install
+
+# Step 4: Run the development server
+ng serve
+
 ## 📦 Run Locally
 ```bash
 npm install
